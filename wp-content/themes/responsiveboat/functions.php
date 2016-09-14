@@ -11,7 +11,7 @@ add_action('after_setup_theme', 'responsiveboat_setup');
 function responsiveboat_customize_register( $wp_customize ) {
 
 	$responsiveboat_parent_theme = get_template();
-	if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-pro') ):
+	if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-lite') ):
 	
 		/* Remove About us section */
 		$wp_customize->remove_panel('panel_6');
@@ -35,7 +35,7 @@ function responsiveboat_customize_register( $wp_customize ) {
     /********** Big title image **********/
     /*************************************/
 	
-	if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-pro') ):
+	if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-lite') ):
 	
 		$wp_customize->add_setting( 'rb_bigtitle_logo', array('sanitize_callback' => 'esc_url_raw' , 'default' => get_stylesheet_directory_uri().'/images/logo-small.png'));
 		$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'rb_bigtitle_logo', array(

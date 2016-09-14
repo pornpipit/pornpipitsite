@@ -14,7 +14,7 @@ if( !empty($zerif_total_posts) && ($zerif_total_posts > 0) ):
 	/**********	Zerif PRO *************/
 	/**********************************/
 	
-	if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-pro') ):
+	if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-lite') ):
 	
 		global $wp_customize;
 		

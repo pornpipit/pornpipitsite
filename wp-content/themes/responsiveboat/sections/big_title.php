@@ -53,7 +53,7 @@
 		/* Big title */
 		$responsiveboat_parent_theme = get_template();
 	
-		if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-pro') ):
+		if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-lite') ):
 		
 			$zerif_bigtitle_title = get_theme_mod( 'zerif_bigtitle_title', __('To add a title here please go to Customizer, "Big title section"','responsiveboat') );
 		

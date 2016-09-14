@@ -99,7 +99,7 @@ ul.nav > li.current_page_item > a:before {
     line-height: 10px;
 }
 .rb_logo {
-    padding-bottom: 190px;
+    /*padding-bottom: 190px;*/
 }
 .header-content-wrap {
 	padding: 10% 0px 290px;

@@ -3,9 +3,9 @@
 $responsiveboat_parent_theme = get_template();
 	
 /**********************************/
-/**********	Zerif PRO *************/
+/**********	Zerif PRO -- > BY PASS TO LITE *************/
 /**********************************/
-if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-pro') ):
+if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-lite') ):
 
 		global $wp_customize;
 			
