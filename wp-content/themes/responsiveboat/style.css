@@ -86,7 +86,10 @@ ul.nav > li.current_page_item > a:before {
     color: #fff;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-    color: #fa6800 !important;
+    color: #fff !important;
+}
+.navbar-inverse .navbar-nav ul.sub-menu li:hover a {
+    color: #fff !important;
 }
 .rb-site-title {
     color: #FFDD00;
@@ -128,7 +131,18 @@ ul.nav > li.current_page_item > a:before {
     float: none;
     display: inline-block;
 }
-
+.navbar-inverse .navbar-nav ul.sub-menu li {
+    display: block;
+    text-align: left;
+    border-bottom: 1px solid #bfbfbf;
+    -webkit-transition: all 700ms;
+    -o-transition: all 700ms;
+    -moz-transition: all 700ms;
+    transition: all 700ms;
+}
+.navbar-inverse .navbar-nav ul.sub-menu li:hover {
+    background-color: #fa6800;
+}
 
 /*--------------------------------------------------------------
 Content
@@ -437,7 +451,7 @@ Responsive
 
 @media screen and (max-width: 767px){
     #main-nav, #main-nav.fixed {
-        background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;
+        /*background: rgba(0, 0, 0, 0.8) none repeat scroll 0% 0%;*/
     }
     .dropdownmenu {
         background: url(images/menu-icon.png) center center no-repeat #fa6800;

@@ -211,7 +211,7 @@ function pornpipit_scripts() {
 	 * Change jQuery to CDN
 	 */
 	wp_deregister_script('jquery');
-    wp_register_script('jquery', "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", false, null, false);
+    wp_register_script('jquery', "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js", false, null, false);
     wp_enqueue_script('jquery');
 
 }

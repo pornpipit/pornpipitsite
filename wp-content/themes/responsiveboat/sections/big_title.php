@@ -75,7 +75,7 @@
 
 		/* Buttons */
 		
-		if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-pro') ):
+		if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-lite') ):
 			$zerif_bigtitle_redbutton_label = get_theme_mod( 'zerif_bigtitle_redbutton_label',__('One button','responsiveboat') );
 			$zerif_bigtitle_redbutton_url = get_theme_mod( 'zerif_bigtitle_redbutton_url','#' );
 
