@@ -159,3 +159,30 @@ function responsiveboat_get_first_image_from_post() {
 	return $zerif_first_img;
 
 }
+
+function pornpipit_php_style() {
+
+	echo ' <style type="text/css">';
+	
+	/**************************************/
+	/********** Product section *********/
+	/**************************************/
+	
+	echo '	.products { background: '. get_theme_mod('zerif_product_background') .' }';
+	echo '	.products .section-header h2 { color: '. get_theme_mod('zerif_product_header') .' }';
+	echo '	.products .section-header h6 { color: '. get_theme_mod('zerif_product_header') .' }';
+	echo '	.products .white-text { color: '. get_theme_mod('zerif_product_text') .' }';
+	
+	$zerif_product_box_underline_color = get_theme_mod('zerif_product_box_underline_color','#e96656');
+	if( !empty($zerif_product_box_underline_color) ):
+		echo '.products .red-border-bottom:before { background: '. $zerif_product_box_underline_color .' !important; }';
+	endif;
+	
+	/********************************************/
+	/********** END - Product section *********/
+	/********************************************/
+	
+	echo '</style>';
+
+}
+add_action('wp_footer','pornpipit_php_style', 1);

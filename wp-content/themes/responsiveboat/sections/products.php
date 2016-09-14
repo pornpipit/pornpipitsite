@@ -2,50 +2,48 @@
 
 	global $wp_customize;
 
-	$zerif_portofolio_number = get_theme_mod('zerif_portofolio_number','8');
+	$zerif_product_number = get_theme_mod('zerif_product_number','8');
 	
-	if( !empty($zerif_portofolio_number) ):
+	if( !empty($zerif_product_number) ):
 
-		$args = array('post_type' => 'portofolio', 'posts_per_page' => $zerif_portofolio_number);
+		$args = array('post_type' => 'product', 'posts_per_page' => $zerif_product_number);
 		
 	else:
 		
-		$args = array('post_type' => 'portofolio', 'posts_per_page' => -1);
+		$args = array('post_type' => 'product', 'posts_per_page' => -1);
 
 	endif;
 	
-	$zerif_portofolio_show = get_theme_mod('zerif_portofolio_show');
+	$zerif_product_show = get_theme_mod('zerif_product_show');
 
 	$zerif_query = new WP_Query( apply_filters( 'zerif_product_parameters',$args ) );
 
 	// zerif_before_product_trigger();
 
-	if ( $zerif_query->have_posts() && ( isset($zerif_portofolio_show) && $zerif_portofolio_show != 1 ) ):
+	if ( $zerif_query->have_posts() && ( isset($zerif_product_show) && $zerif_product_show != 1 ) ):
 				
-		echo '<section class="works" id="works">';
+		echo '<section class="products" id="products">';
 		
 	elseif ( isset( $wp_customize ) && $zerif_query->have_posts() ):
 	
-		echo '<section class="works zerif_hidden_if_not_customizer" id="works">';
+		echo '<section class="products zerif_hidden_if_not_customizer" id="products">';
 
 	endif;
 
 	// zerif_top_product_trigger();
 	
-	if ( ($zerif_query->have_posts() && ( isset($zerif_portofolio_show) && $zerif_portofolio_show != 1 )) || ( isset( $wp_customize ) && $zerif_query->have_posts() ) ):
+	if ( ($zerif_query->have_posts() && ( isset($zerif_product_show) && $zerif_product_show != 1 )) || ( isset( $wp_customize ) && $zerif_query->have_posts() ) ):
 
 			echo '<div class="container">';
 				echo '<div class="section-header">';
 				
 					/* title */
 				
-					$zerif_portofolio_title = get_theme_mod('zerif_portofolio_title',__('product','zerif'));
+					$zerif_product_title = get_theme_mod('zerif_product_title',__('product','zerif'));
 
-					if( !empty($zerif_portofolio_title) ):
+					if( !empty($zerif_product_title) ):
 					
-						// echo '<h2 class="dark-text">'.$zerif_portofolio_title.'</h2>';
-
-						echo '<h2 class="dark-text">Products</h2>';
+						echo '<h2 class="dark-text">'.$zerif_product_title.'</h2>';
 						
 					elseif ( isset( $wp_customize ) ):
 
@@ -55,11 +53,11 @@
 					
 					/* subtitle */
 
-					$zerif_portofolio_subtitle = get_theme_mod('zerif_portofolio_subtitle',__('product subtitle','zerif'));
+					$zerif_product_subtitle = get_theme_mod('zerif_product_subtitle',__('product subtitle','zerif'));
 
-					if( !empty($zerif_portofolio_subtitle) ):
+					if( !empty($zerif_product_subtitle) ):
 
-						echo '<h6>'.$zerif_portofolio_subtitle.'</h6>';
+						echo '<h6>'.$zerif_product_subtitle.'</h6>';
 						
 					elseif ( isset( $wp_customize ) ):
 

@@ -83,6 +83,21 @@ function wp_themeisle_customize_register( $wp_customize ) {
     $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
     $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
     $wp_customize->remove_section('colors');
+    $choices = array(
+            'our_focus' => __( 'Our focus','zerif' ),
+            'portofolio' => __( 'Portfolio','zerif' ),
+            'about_us' => __( 'About us','zerif' ),
+            'our_team' => __( 'Our team','zerif' ),
+            'testimonials' => __( 'Testimonials','zerif' ),
+            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
+            'right_ribbon' => __( 'Right ribbon','zerif' ),
+            'contact_us' => __( 'Contact us','zerif' ),
+            'packages' => __(' Packages','zerif' ),
+            'map' => __( 'Google map','zerif' ),
+            'subscribe' => __( 'Subscribe','zerif' ),
+            'latest_news' => __( 'Latest news','zerif' ),
+            'product' => __( 'Proudcts','zerif' )
+        );
 
     /**********************************************/
     /*************** ORDER ************************/
@@ -103,20 +118,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '1st section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 1
     ) );
 
@@ -141,7 +143,8 @@ function wp_themeisle_customize_register( $wp_customize ) {
             'packages' => __(' Packages','zerif' ),
             'map' => __( 'Google map','zerif' ),
             'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
+            'latest_news' => __( 'Latest news','zerif' ),
+            'product' => __( 'Proudcts','zerif' )
         ),
         'priority' => 2
     ) );
@@ -155,20 +158,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '3rd section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 3
     ) );
 
@@ -181,20 +171,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '4rt section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 4
     ) );
 
@@ -207,20 +184,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '5th section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 5
     ) );
 
@@ -233,20 +197,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '6th section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 6
     ) );
 
@@ -259,20 +210,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '7th section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 7
     ) );
 
@@ -285,20 +223,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '8th section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 8
     ) );
 
@@ -311,20 +236,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '9th section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 9
     ) );
 
@@ -337,20 +249,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '10th section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 10
     ) );
 
@@ -363,20 +262,7 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '11th section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 11
     ) );
 
@@ -389,22 +275,23 @@ function wp_themeisle_customize_register( $wp_customize ) {
         'type' => 'select',
         'label' => '12th section',
         'section' => 'zerif_order_section',
-        'choices' => array(
-            'our_focus' => __( 'Our focus','zerif' ),
-            'portofolio' => __( 'Portfolio','zerif' ),
-            'about_us' => __( 'About us','zerif' ),
-            'our_team' => __( 'Our team','zerif' ),
-            'testimonials' => __( 'Testimonials','zerif' ),
-            'bottom_ribbon' => __( 'Bottom ribbon','zerif' ),
-            'right_ribbon' => __( 'Right ribbon','zerif' ),
-            'contact_us' => __( 'Contact us','zerif' ),
-            'packages' => __(' Packages','zerif' ),
-            'map' => __( 'Google map','zerif' ),
-            'subscribe' => __( 'Subscribe','zerif' ),
-            'latest_news' => __( 'Latest news','zerif' )
-        ),
+        'choices' => $choices,
         'priority' => 12
     ) );
+
+    /* section 13 */
+    $wp_customize->add_setting( 'section13', array(
+        'default' => 'product'
+    ) );
+
+    $wp_customize->add_control( 'section12', array(
+        'type' => 'select',
+        'label' => '13th section',
+        'section' => 'zerif_order_section',
+        'choices' => $choices,
+        'priority' => 13
+    ) );
+
 
     /***********************************************/
     /************** COLORS OPTIONS  ****************/
