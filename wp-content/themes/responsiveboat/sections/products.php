@@ -22,11 +22,11 @@
 
 	if ( $zerif_query->have_posts() && ( isset($zerif_product_show) && $zerif_product_show != 1 ) ):
 				
-		echo '<section class="products" id="products">';
+		echo '<section class="products-home" id="products-home">';
 		
 	elseif ( isset( $wp_customize ) && $zerif_query->have_posts() ):
 	
-		echo '<section class="products zerif_hidden_if_not_customizer" id="products">';
+		echo '<section class="products-home zerif_hidden_if_not_customizer" id="products-home">';
 
 	endif;
 

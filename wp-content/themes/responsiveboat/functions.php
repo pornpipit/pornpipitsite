@@ -172,14 +172,14 @@ function pornpipit_php_style() {
 	/********** Product section *********/
 	/**************************************/
 	
-	echo '	.products { background: '. get_theme_mod('zerif_product_background') .' }';
-	echo '	.products .section-header h2 { color: '. get_theme_mod('zerif_product_header') .' }';
-	echo '	.products .section-header h6 { color: '. get_theme_mod('zerif_product_header') .' }';
-	echo '	.products .white-text { color: '. get_theme_mod('zerif_product_text') .' }';
+	echo '	.products-home { background: '. get_theme_mod('zerif_product_background') .' }';
+	echo '	.products-home .section-header h2 { color: '. get_theme_mod('zerif_product_header') .' }';
+	echo '	.products-home .section-header h6 { color: '. get_theme_mod('zerif_product_header') .' }';
+	echo '	.products-home .white-text { color: '. get_theme_mod('zerif_product_text') .' }';
 	
 	$zerif_product_box_underline_color = get_theme_mod('zerif_product_box_underline_color','#e96656');
 	if( !empty($zerif_product_box_underline_color) ):
-		echo '.products .red-border-bottom:before { background: '. $zerif_product_box_underline_color .' !important; }';
+		echo '.products-home .red-border-bottom:before { background: '. $zerif_product_box_underline_color .' !important; }';
 	endif;
 	
 	/********************************************/
@@ -202,6 +202,14 @@ function pornpipit_scripts() {
 	/*****************/
 	/**** STYLES ****/
 	/****************/
+
+	/**
+	 * Google Font
+	 */
+	// Mitr font for Title
+	// Pridi font for paragraph
+	wp_enqueue_style( 'mitr-font', 'https://fonts.googleapis.com/css?family=Mitr:200,300,400,500,600,700|Pridi');
+
 
 
 	/*****************/

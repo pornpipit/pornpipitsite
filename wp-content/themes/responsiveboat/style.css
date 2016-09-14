@@ -12,6 +12,16 @@
  Tags:         black, gray, red, white, one-column, two-columns, right-sidebar, responsive-layout, custom-background, custom-menu, editor-style, featured-images, threaded-comments, translation-ready
 */
 
+/*--------------------------------------------------------------
+Typo
+--------------------------------------------------------------*/
+body {
+    font-family: 'Pridi', serif !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Mitr', sans-serif;
+    font-weight: 400;
+}
 
 /*--------------------------------------------------------------
 General
@@ -65,10 +75,6 @@ General
 	color: #ffffff;
 }
 
-p {
-    font-family: 'Lato', sans-serif !important;
-}
-
 /*--------------------------------------------------------------
 Header
 --------------------------------------------------------------*/
@@ -79,7 +85,8 @@ Header
 ul.nav > li.current_page_item > a:before {
 	 background:#fa6800;
 }
-.navbar-inverse .navbar-nav > li > a {
+.navbar-inverse .navbar-nav > li > a,
+.navbar-inverse .navbar-nav > ul.sub-menu li > a {
     font-size: 12px;
     font-family: "Montserrat", "sans-serif";
     text-transform: uppercase;
