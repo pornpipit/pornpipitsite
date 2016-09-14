@@ -160,6 +160,10 @@ function responsiveboat_get_first_image_from_post() {
 
 }
 
+/**
+ * for apply style for products in homepage
+ * @return <style></style>
+ */
 function pornpipit_php_style() {
 
 	echo ' <style type="text/css">';
@@ -186,3 +190,30 @@ function pornpipit_php_style() {
 
 }
 add_action('wp_footer','pornpipit_php_style', 1);
+
+/**
+
+ * Enqueue scripts and styles.
+
+ */
+
+function pornpipit_scripts() {
+	
+	/*****************/
+	/**** STYLES ****/
+	/****************/
+
+
+	/*****************/
+	/**** SCRIPTS ****/
+	/****************/
+	/**
+	 * Change jQuery to CDN
+	 */
+	wp_deregister_script('jquery');
+    wp_register_script('jquery', "https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js", false, null, false);
+    wp_enqueue_script('jquery');
+
+}
+
+add_action( 'wp_enqueue_scripts', 'pornpipit_scripts', 11 );

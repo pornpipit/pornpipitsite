@@ -322,7 +322,9 @@ function zerif_scripts() {
 
 	/* Bootstrap style */
 	
-	wp_enqueue_style( 'zerif_bootstrap_style', get_template_directory_uri() . '/css/bootstrap.min.css');
+	// wp_enqueue_style( 'zerif_bootstrap_style', get_template_directory_uri() . '/css/bootstrap.min.css');
+	// Change bootstrap to CDN
+	wp_enqueue_style( 'zerif_bootstrap_style', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
 
 	/* Font awesome */
 	
@@ -344,7 +346,9 @@ function zerif_scripts() {
 
 	/* Bootstrap script */
 	
-	wp_enqueue_script( 'zerif_bootstrap_script', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '20120206', true  );
+	// wp_enqueue_script( 'zerif_bootstrap_script', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '20120206', true  );
+	// Change bootstrap to CDN
+	wp_enqueue_script( 'zerif_bootstrap_script', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array('jquery'), '20120206', true  );
 
 	if( is_home() ):
 	
