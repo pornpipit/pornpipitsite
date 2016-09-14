@@ -14,7 +14,7 @@ function responsiveboat_customize_register( $wp_customize ) {
 	if( !empty($responsiveboat_parent_theme) && ($responsiveboat_parent_theme == 'zerif-lite') ):
 	
 		/* Remove About us section */
-		$wp_customize->remove_panel('panel_6');
+		// $wp_customize->remove_panel('panel_6');
 		
 	else:
 	
