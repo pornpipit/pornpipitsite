@@ -208,7 +208,7 @@ function pornpipit_scripts() {
 	 */
 	// Mitr font for Title
 	// Pridi font for paragraph
-	wp_enqueue_style( 'mitr-font', 'https://fonts.googleapis.com/css?family=Mitr:200,300,400,500,600,700|Pridi');
+	wp_enqueue_style( 'mitr-font', '//fonts.googleapis.com/css?family=Mitr:200,300,400,500,600,700|Pridi');
 
 
 
@@ -219,7 +219,7 @@ function pornpipit_scripts() {
 	 * Change jQuery to CDN
 	 */
 	wp_deregister_script('jquery');
-    wp_register_script('jquery', "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js", false, null, false);
+    wp_register_script('jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js", false, null, false);
     wp_enqueue_script('jquery');
 
 }
