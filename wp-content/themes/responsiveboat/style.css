@@ -22,18 +22,58 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Mitr', sans-serif;
     font-weight: 400;
 }
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 24px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px;
+}
+button {
+    font-family: 'Mitr', sans-serif;
+}
+footer {
+    font-family: 'Mitr', sans-serif;
+}
 
 /*--------------------------------------------------------------
 General
 --------------------------------------------------------------*/
 .green-btn, .red-btn {
 	background: rgba(255, 255, 255, 0.15);
-	border: 1px solid #FFDD00 !important;
 }
 
 .green-btn:hover, .red-btn:hover {
-	background: #FFDD00;
-    border: 1px solid #FFDD00 !important;
+	background: #55722D;
     color: #303030 !important;
 }
 
@@ -45,6 +85,7 @@ General
     border-radius: 3px;
     margin: 10px;
     border: medium none;
+    font-size: 1.125em;
 }
 .section-header h2 {
     padding-bottom: 0px;
@@ -98,6 +139,11 @@ ul.nav > li.current_page_item > a:before {
 .navbar-inverse .navbar-nav ul.sub-menu li:hover a {
     color: #fff !important;
 }
+.header.header > .navbar {
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
 .rb-site-title {
     color: #FFDD00;
     font-size: 20px;
@@ -122,6 +168,15 @@ ul.nav > li.current_page_item > a:before {
 }
 .navbar-black-init {
     background: #fa6800;
+}
+.navbar-black-init,
+.navbar {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b24400+1,fa6800+24,fa6800+70,b24400+100 */
+    background: #b24400; /* Old browsers */
+    background: -moz-linear-gradient(left,  #b24400 1%, #fa6800 24%, #fa6800 70%, #b24400 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #b24400 1%,#fa6800 24%,#fa6800 70%,#b24400 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #b24400 1%,#fa6800 24%,#fa6800 70%,#b24400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b24400', endColorstr='#b24400',GradientType=1 ); /* IE6-9 */
 }
 
 .navbar-black-init .rb-hidden-logo {
@@ -224,7 +279,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 }*/
 
 article.hentry {
-    border: 1px solid #DEDEDE;
+    border: 0px solid #DEDEDE;
     padding: 15px;
     background-color: #FFF !important;
 }
@@ -243,6 +298,10 @@ article.hentry {
     margin-bottom: 0px;
     font-family: "Oxygen", sans-serif !important;
     margin-right: 10px;
+}
+
+.entry-content p {
+    text-align: initial;
 }
 
 .content-left-wrap {
@@ -278,11 +337,23 @@ article.hentry {
     color: #fff;
 }
 
+.focus, .works, .about-us, .features, .packages, .products, .testimonial, .contact-us, .products-home {
+    padding-top: 100px;
+}
+.products-home {
+    padding-bottom: 100px;
+}
+
 /*--------------------------------------------------------------
 Footer
 --------------------------------------------------------------*/
 #footer {
     background: rgba(39, 39, 39, 0.95) none repeat scroll 0% 0%;
+}
+
+#footer .footer-box {
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
 .entry-footer a {

@@ -244,7 +244,6 @@ else {
 	$section11 = get_theme_mod('section11','subscribe');
 	$section12 = get_theme_mod('section12','latest_news');
 	$section13 = get_theme_mod('section13','products');
-	$section14 = get_theme_mod('section14','about_you');
 	
 	$sections[0] = $section1;
 	$sections[1] = $section2;
@@ -259,9 +258,8 @@ else {
 	$sections[10] = $section11;
 	$sections[11] = $section12;
 	$sections[12] = $section13;
-	$sections[13] = $section14;
 	
-	for ($i = 0; $i <= 13; $i++):
+	for ($i = 0; $i <= 12; $i++):
 	
 	if( !empty($sections[$i]) ):
 		
@@ -296,14 +294,6 @@ else {
 				/* ABOUT US */
 
 				get_template_part( 'sections/about_us' );
-				
-				break;
-
-			case "about_you":
-				
-				/* ABOUT US */
-
-				get_template_part( 'sections/about_you' );
 				
 				break;
 
