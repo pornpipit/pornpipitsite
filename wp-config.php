@@ -20,17 +20,10 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-// define('DB_NAME', 'clean');
-// define('DB_USER', 'root');
-// define('DB_PASSWORD', '');
-// define('DB_HOST', 'localhost');
-
-/* Test SIte */
-define('DB_NAME', 'u440306972_clean');
-define('DB_USER', 'u440306972_clean');
-define('DB_PASSWORD', 'tkelV3j2eg');
+define('DB_NAME', 'clean');
+define('DB_USER', 'root');
+define('DB_PASSWORD', '');
 define('DB_HOST', 'localhost');
-
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');
@@ -83,14 +76,16 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 /* Change upload path */
-define( 'UPLOADS', ''.'files' );
+// define( 'UPLOADS', ''.'assets' );
+
+// define('FORCE_SSL_ADMIN', true);
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
 /* chnage wp-content */
-define('WP_CONTENT_FOLDERNAME', 'wp-content');
+define('WP_CONTENT_FOLDERNAME', 'pornphiphit-assets');
 define('WP_CONTENT_DIR', ABSPATH . WP_CONTENT_FOLDERNAME) ;
 define('WP_SITEURL', 'http://' . $_SERVER['HTTP_HOST'] . '/');
 define('WP_CONTENT_URL', WP_SITEURL . WP_CONTENT_FOLDERNAME);
