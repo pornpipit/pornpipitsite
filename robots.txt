@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /all-products/
+Disallow: /product-category/
+Disallow: /product/
+Disallow: /portfolio/
+
+

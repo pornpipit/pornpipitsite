@@ -229,6 +229,8 @@ else {
 
 <div id="content" class="site-content zerif-fp-site-content">
 
+	<?php wd_slider(1); ?>
+
 	<?php
 		/* OUR FOCUS SECTION */
 		get_template_part( 'sections/our_focus' );
