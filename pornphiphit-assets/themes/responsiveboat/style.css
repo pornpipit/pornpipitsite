@@ -592,3 +592,9 @@ Responsive
 /*#main-nav {
     display: none !important;
 }*/
+
+html body {
+    -webkit-filter: grayscale(100%) !important;
+    filter: grayscale(100%) !important;
+    background: #444 !important; 
+}

@@ -2,6 +2,7 @@
 
 get_header(); 
 
+echo do_shortcode('[sg_popup id=1]');
 
 if ( get_option( 'show_on_front' ) == 'page' ) {
 
